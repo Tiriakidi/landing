@@ -472,11 +472,11 @@ body {
 .control-overlay::after {
     position: absolute;
     content: url(../images/play.png);
-    /* не понятно почему отступы не соотв макету */
     top: 150px;
     left: 335px;
     bottom: 175px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .control-line {
@@ -899,7 +899,6 @@ body {
 
 /* #endregion */
 
-
 /* #region CLIENTS */
 
 
@@ -931,7 +930,6 @@ body {
     margin-bottom: 6px;
     margin-top: 12px;
     align-self: center;
-
 }
 
 .clients-header-text {
@@ -945,7 +943,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .clents-review-box{
@@ -1018,10 +1016,224 @@ body {
     margin-top: -300px;   
 }
 
+/* #endregion */
+
+/* #region CONTACTS and FEEDBACK */
+
+.contacts {
+    height: 954px;
+    background-image: url(../images/contacts-overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+}
+
+.contacts-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+} 
+
+.contacts-wrapper {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.contacts-form-container {
+    width: 883px;
+    height: 445px;
+    background-color: #181818;
+    margin-top: -220px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.contacts-form__subtitle {
+    font-family: "YesevaOne Regular", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contacts-form__list {
+    width: 516px;
+    padding-left: 0;
+}
+
+.contacts-form__item--first_line {
+    margin-right: 46px;
+}
+
+.contacts-form__input {
+    width: 231px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;  
+    padding-bottom: 2px;
+}
+
+.contacts-form__input--last {
+    width: 516px;
+    color: #FFFFFF;
+
+}
+
+.contacts-form__item--last {
+    padding-top: 40px;
+}
+
+.types-form__input:focus {
+    caret-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.contacts-form__label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacts-form__input::placeholder {
+    color: #FFFFFF;  
+}
+
+.contacts-form__input--first_line, .contacts-form__label--first_line {
+    display: block;
+}
 
 
+.contacts-form__list, .contacts-form__item--first_line {
+    float : left;   
+}
 
+.contacts-form-checkbox-container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
+.contacts-form-checkbox__label {
+    color: #FFFFFF;
+}
+
+.contacts-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 589px;
+    margin-top: 50px;
+}
+
+.contacts-social {
+    margin-top: 23px;
+}
+
+.contacts-social__mail, .contacts-social__instagram {
+    margin-right: 7px;
+}
+
+.contacts-social__mail, .contacts-social__instagram:hover {
+    cursor: pointer;
+}
+
+.contacts-map {
+    width: 925px;
+    height: 465px;
+    margin-top: 35px;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+.footer {
+    background-color: #131313;
+    height: 133px;
+}
+
+.footer-wrapper {
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+  
+    padding-top: 50px;
+}
+
+.footer-logo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+
+    min-width: 180px;
+    margin-right: 95px;
+}
+
+.footer-nav__list {
+    width: 581px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+
+.footer-nav__item {
+    list-style: none;    
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;     
+}
+
+.footer-nav__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-nav__link:hover {
+    color: #E3B873;
+}
+
+.footer-phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+
+    min-width: 126px;
+    margin-left: 67px;
+    margin-right: 45px;
+}
+
+.footer-button {
+    font-family: "Nunito Sans Italic", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    width: 161px;
+    height: 37px;
+    padding: 13px 33px;   
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
 
 
 /* #endregion */

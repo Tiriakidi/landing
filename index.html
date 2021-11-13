@@ -269,7 +269,7 @@
                         <img class="styles-pic" src="./images/styles-4.jpg" alt="style pic 4" width="354px" height="625px">
                     </div>
                 </div>
-                </div>
+            </div>
             <div class="styles-overlay"></div>
         </section>
 
@@ -281,8 +281,6 @@
                     <div class="clients-header-logo icon"></div>
                     <p class="clients-header-text">80% of our customers recommend us to their <br>friends and family.</p>
                 </div>
-
-
                 <div class="clients-review-container">
                     <div class="clients-review-left clents-review-box">
                         <div class="clients-review-name">
@@ -333,13 +331,67 @@
                 <div class="clients-overlay-reflection"></div>
                 <div class="clients-overlay"></div>
             </div>
-
         </section>
 
-
+        <!-- SECTION CONTACT AND FEEDBACK -->
+        <section class="contacts">
+            <div class="contacts-wrapper wrapper">
+                
+                    <form class="contacts-form-container form-container">
+                        <p class="contacts-form__subtitle">have any questions?</p>
+                        <ul class="contacts-form__list form-submit__list">
+                            <li class="contacts-form__item contacts-form__item--first_line">
+                                <label class="contacts-form__label contacts-form__label--first_line form__label" for="contacts-form-name-input">Name </label>
+                                <input class="contacts-form__input contacts-form__input--first_line form__input" type="text" id="contacts-form-name-input" name="name-for-feedback" placeholder="What is your name:">    
+                            </li>
+                            <li class="contacts-form__item ">
+                                <label class="contacts-form__label contacts-form__label--first_line form__label" for="contacts-form-tel-input">Phone </label>
+                                <input class="contacts-form__input contacts-form__input--first_line form__input" type="tel" id="contacts-form-tel-input" name="tel-for-feedback" placeholder="Your phone number:">
+                            </li>
+                            <li class="contacts-form__item contacts-form__item--last">
+                                <label class="contacts-form__label contacts-form__label--last form__label" for="contacts-form-email-input">Question </label>
+                                <input class="contacts-form__input contacts-form__input--last form__input" type="text" id="contacts-form-email-input" name="Question" placeholder="I want to know:">
+                            </li>
+                        </ul>
+                        <div class="contacts-form-checkbox-container form-checkbox-container">
+                            <input class="contacts-form-checkbox__input form-checkbox__input" type="checkbox" id="contacts-form-checkbox" name="agree" value="true">
+                            <span class="contacts-form-checkbox__fake form-checkbox__fake"></span>
+                            <label class="contacts-form-checkbox__label form-checkbox__label" for="contacts-form-checkbox">I agree to the processing of personal data</label>
+                        </div>
+                        <div class="contacts-form__button-container">                        
+                            <input class="contacts-form__button button" type="submit" value="submit">
+                        </div>
+                    </form>
+                <h3 class="contacts-subtitle subtitle">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
+                <div class="contacts-social">
+                    <img class="contacts-social__mail" src="./images/mail.svg" alt="mail">
+                    <img class="contacts-social__instagram" src="./images/instagram.svg" alt="instagram">
+                </div>
+                <div class="contacts-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231845!2d39.72099081477097!3d47.244847220892034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1636791952123!5m2!1sen!2sru" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contacts-overlay"></div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-wrapper wrapper">
+            <span class="footer-logo">IC "Repair Design Project"</span>
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">home</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">projects</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">measurement</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">team</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">reviews</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">contacts</a></li>
+                </ul>
+            </nav>
+            <a class="footer-phone" href="tel:+7 (928) 768-32-39">+7 (928) 768-32-39</a>
+            <button class="footer-button button">Request a call</button>
+        </div>
+    </footer>
     
 </body>
 </html>
