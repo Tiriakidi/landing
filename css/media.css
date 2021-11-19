@@ -1,0 +1,505 @@
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+    
+
+/* #region Header */
+
+@media screen and (max-width: 1300px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .header-phone {
+        color: #FFFFFF;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-wrapper {
+        justify-content: space-between;
+    }
+}
+
+/* #endregion */
+
+/* #region HERO */
+
+@media screen and (max-width: 1300px) {
+    .hero {
+        height: 476px;
+    }
+
+    .hero-wrapper {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+    
+    .hero-title {
+        font-size: 23px;
+        line-height: 31px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 19px;
+        width: 340px;
+        margin-bottom: 25px;
+    }
+
+    .hero-button {
+        width: 339px;
+        margin-bottom: 26px;
+    }
+
+    .hero-button--submit_text {
+        visibility: hidden;
+    }
+      
+    .hero-button--submit_text::before {
+        content: "APPLICATION";
+        visibility: visible;
+        display: block;
+        margin-top: 19px;
+    }
+}
+
+/* #endregion */
+
+/* #region COMLETED PROJECTS */
+
+@media screen and (max-width: 1300px) {
+    .pr-cities__list {
+        display: none;
+    }
+
+    .pr-info-wrapper {
+        flex-direction: column;
+    }
+
+    .pr-info {
+        width: 340px;
+    }
+
+    .pr-info__title {
+        width: 253px;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -0.07em;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .pr-info__text {
+        max-width: 311px;
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .pr-image__Rostov {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        background: url(../images/completed_rostov_mobile.jpg);
+        width: 340px;
+        height: 242px;
+        padding-left: 340px;
+        margin-top: 0;
+    }
+
+    .pr-image__Rostov_wrapper {
+        position: relative;
+    }
+
+    .pr-image__Rostov_wrapper::before {
+        position: absolute;
+        content: url(../images/round_arrow_left.svg);
+        margin-top: 103px;
+        margin-left: 13px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .pr-image__Rostov_wrapper::after {
+        position: absolute;
+        content: url(../images/round_arrow_right.svg);
+        margin-top: 103px;
+        margin-left: 291px;
+        cursor: pointer;
+    }
+
+    .pr-more__subtitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .pr-more__desc {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .pr-more-box::after {
+        display: none;
+    }
+}
+
+/* #endregion */
+
+/* #region CONTROL */
+
+@media screen and (max-width: 1300px) {
+    .control {
+        background-color: #131313;
+        min-height: 840px;
+    }
+    
+    .control-wrapper {
+        margin-top: -360px;
+    }
+
+    .control-subtitle {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .control-image-box {
+        height: 180px;
+    }
+
+    .control-image {
+        width: 340px;
+        height: 207px;
+    }
+
+    .control-overlay {
+        height: 207px;
+    }
+
+    .control-overlay::after {
+        position: absolute;
+        content: url(../images/play_small.svg);
+        top: 65px;
+        left: 120px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .control-text {
+        max-width: 340px;
+        font-size: 11px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+    }
+
+    .control-form-container {
+        margin-top: 0;
+        max-width: 340px;
+    }
+
+    .control-form-submit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control-form-submit__list li:first-child {
+        margin-bottom: 63px;
+    }
+
+    .control-form-submit__list .control-form-submit__item {
+        float : none;
+        width : 231px;
+    }
+
+    .control-form__label {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .control-form__input::placeholder {
+        color: #FFFFFF;
+    }
+
+    .control-form__input {
+        width : 340px;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #131313;
+        border: 1px solid #FFFFFF;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;  
+        padding-bottom: 2px;
+    }
+
+    .control-form__button {
+        width: 340px;
+        margin-top: 80px;
+    }
+
+    .control-form-checkbox-container {
+        margin-top: -110px;
+        justify-content: flex-start;
+    }
+
+    .control-form-checkbox__label {
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }  
+}
+
+/* #endregion */
+
+/* #region TYPES OF REPAIR */
+
+@media screen and (max-width: 1300px) {
+    /* .types-container {
+        max-width: 340px;
+        margin: 0 auto;
+    } */
+
+    .types-save-money-container {
+        display: none;
+    }
+
+    .types-specials-and-form-container {
+        display: none;
+    }
+
+    .types-overlay {
+        background: none;
+    }
+
+    .types-container {
+        flex-direction: column;
+    }
+
+    .types-box {
+        margin-left: 0;
+        margin-bottom: 59px;
+    }
+
+    .types-subtitle {
+        margin-top: 58px;
+    }
+
+    .types-box__image {
+        width: 340px;
+        height: 366px;
+    }
+
+    .types-box-inner {
+        width: 270px;
+        height: 241px;
+        margin-left: 0;
+        margin-top: -145px;
+    }
+
+    .types-box__subtitle {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .types-box__item {
+        line-height: 22px;
+    }
+
+    .types-box-price {
+        margin-left: 0;
+    }
+}
+
+/* #endregion */
+
+/* #region STYLES */
+
+@media screen and (max-width: 1300px) {
+    .styles-aside__list {
+        display: none;
+    }
+
+    .styles-overlay {
+        display: none;
+    }
+
+    .styles-pic--1 {
+        display: none;
+    }
+
+    .styles-pic--2 {
+        display: none;
+    }
+
+    .styles-pic--3 {
+        display: none;
+    }
+
+    .styles-pic--4 {
+        display: none;
+    }
+
+    .styles-aside__title {
+        font-size: 22px;
+        line-height: 30px;
+        width: 340px;
+        margin-top: -240px;
+        text-align: center;
+    }
+
+    .styles {
+        max-width: 340px;
+        margin: 0 auto;
+        width: 340px;
+        height: 242px;
+        margin-top: 145px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .styles::before {
+        position: absolute;
+        content: url(../images/round_arrow_left.svg);
+        margin-top: 103px;
+        margin-left: 13px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .styles::after {
+        position: absolute;
+        content: url(../images/round_arrow_right.svg);
+        margin-top: -33px;
+        margin-left: 291px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
+/* #endregion */
+
+/* #region CLIENTS */
+
+@media screen and (max-width: 1300px) {
+    .clients {
+        display: none;
+    }
+}
+
+/* #endregion */
+
+/* #region CONTACTS and FEEDBACK */
+
+@media screen and (max-width: 1300px) {
+    .contacts {
+        background-image: none;
+        background-color: #181818;
+        margin-top: -120px;
+        height: 1160px;
+    }
+    .contacts-overlay {
+        display: none;
+    }
+
+    .contacts-form-container {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .contacts-form__subtitle {
+        margin-bottom: 52px;
+        margin-top: 160px;
+    }
+
+    .contacts-form__list, .contacts-form__item--first_line {
+        float: none;
+    }
+
+    .contacts-form__list {
+        width: 340px;
+        margin-top: 0;
+    }
+
+    .contacts-form__item {
+        width: 340px;
+        margin-right: 0;
+        margin-bottom: 63px;
+    }
+
+    .contacts-form__item--last {
+        padding-top: 0;
+    }
+
+    .contacts-form__input {
+        width: 340px;
+    }
+
+    .contacts-form__list li:last-child {
+        margin-bottom: 0;
+    }
+
+    .contacts-form-checkbox-container {
+        margin: 0;
+    }
+
+    .contacts-form__button {
+        width: 340px;
+        margin-top: 67px;
+    }
+
+    .contacts-subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 560px;
+        width: 320px;
+    }
+
+    .contacts-map {
+        margin-top: -460px;
+    }
+
+    .contacts-map--link {
+        width: 340px;
+        height: 255px;
+    }
+
+    .contacts-social__mail, .contacts-social__instagram {
+        width: 39px;
+        height: 39px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+   
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: none;
+    }
+}
+
+/* #endregion */
+
+

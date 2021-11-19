@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="./css/media.css">
     <title>IC "Repair Design Project"</title>
 </head>
 <body>
@@ -28,7 +27,6 @@
             <button class="header-button button">Request a call</button>
         </div>
     </header>
-
     <main>
         <!-- SECTION HERO -->
         <section class="hero">
@@ -37,13 +35,11 @@
                     Turnkey Repair in the<br> city of 
                     <span class="hero-title__highlight">Rostov-on-Don</span>
                 </h1>
-
                 <p class="hero-text">
-                    Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from<br> cost of materials due to the organization of work
-                </p>
-                
+                    Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+                </p>               
                 <button class="hero-button button">CALCULATE THE COST</button>
-                <button class="hero-button button">SUBMIT YOUR APPLICATION</button>
+                <button class="hero-button hero-button--submit button"><span class="hero-button--submit_text">SUBMIT YOUR APPLICATION</span></button>
             </div>
             <div class="hero-overlay"></div>
         </section>
@@ -55,12 +51,13 @@
                 <li class="pr-cities__item"><a class="pr-cities__link" href="#">Sochi Thieves</a></li>
                 <li class="pr-cities__item"><a class="pr-cities__link" href="#">Rostov-on-Don Patriotic</a></li>
             </ul>
-            <div class="pr-info-wrapper wrapper">  
-                             
+            <div class="pr-info-wrapper wrapper">                               
                 <div class="pr-info">
                     <h2 class="pr-info__title title">Completed<br>projects</h2>
-                    <p class="pr-info__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families</p>
-                    
+                    <p class="pr-info__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families</p>                    
+                    <div class="pr-image__Rostov_wrapper">
+                        <img class="pr-image__Rostov" src="./images/completed_rostov.jpg" alt="rostov appartmets" width="679px" height="482px">  
+                    </div>             
                     <div class="pr-more-box">
                         <div class="pr-more__block">
                             <h3 class="pr-more__subtitle subtitle">city:</h3>
@@ -80,7 +77,6 @@
                         </div>                        
                     </div>                    
                 </div>
-                <img class="pr-image__Rostov" src="./images/completed_rostov.jpg" alt="rostov appartmets" width="679px" height="482px">               
             </div>
         </section>
 
@@ -89,8 +85,8 @@
             <div class="control-wrapper wrapper">
                 <h3 class="control-subtitle subtitle">online control</h3>
                 <div class="control-camera-pic icon"></div>
-                <div class="control-image">
-                    <img src="./images/control.jpg" alt="control_video" width="817px" height="434px">
+                <div class="control-image-box">
+                    <img class="control-image" src="./images/control.jpg" alt="control_video" width="817px" height="434px">
                     <div class="control-overlay"></div>
                 </div>
                 <hr class="control-line">
@@ -110,12 +106,15 @@
                             </li>
                         </ul>
                         <input class="control-form__button button" type="submit" value="submit">
-                    </div>
-
+                       
+    
+                    </div> 
                     <div class="control-form-checkbox-container form-checkbox-container">
-                        <input class="control-form-checkbox__input form-checkbox__input" type="checkbox" id="control-form-checkbox" name="agree" value="true">
-                        <span class="control-form-checkbox__fake form-checkbox__fake"></span>
-                        <label class="control-form-checkbox__label form-checkbox__label" for="control-form-checkbox">I agree to the processing of personal data</label>
+                        <label class="label">
+                            <input class="control-form-checkbox__input form-checkbox__input" type="checkbox" id="control-form-checkbox" name="agree" value="true">
+                            <span class="control-form-checkbox__fake form-checkbox__fake"></span>
+                            <label class="control-form-checkbox__label form-checkbox__label" for="control-form-checkbox">I agree to the processing of personal data</label>
+                        </label>
                     </div>
                 </form>
             </div>
@@ -256,7 +255,7 @@
                     </ul>
                 </div>
                 <div class="styles-pic-container">
-                    <div class="styles-pic--1">
+                    <div class="styles-pic--1 ">
                         <img class="styles-pic" src="./images/styles-1.jpg" alt="style pic 1" width="354px" height="558px">
                     </div>
                     <div class="styles-pic--2">
@@ -320,7 +319,6 @@
                             <p class="clients-review__text">The repair process was turned out in terms, faster than anticipated. 
                             Team mobile and professional. Works performed qualitatively without comments. 
                             Quality satisfied. Prices democratic. I recommend these masters.</p>
-
                             <div class="clients-review-appinfo">
                                 <img class="clients-review-appinfo-logo" src="./images/egor-app.png" alt="">
                             </div>
@@ -335,8 +333,7 @@
 
         <!-- SECTION CONTACT AND FEEDBACK -->
         <section class="contacts">
-            <div class="contacts-wrapper wrapper">
-                
+            <div class="contacts-wrapper wrapper">                
                     <form class="contacts-form-container form-container">
                         <p class="contacts-form__subtitle">have any questions?</p>
                         <ul class="contacts-form__list form-submit__list">
@@ -364,17 +361,16 @@
                     </form>
                 <h3 id="contacts" class="contacts-subtitle subtitle">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
                 <div class="contacts-social">
-                    <img class="contacts-social__mail" src="./images/mail.svg" alt="mail">
-                    <img class="contacts-social__instagram" src="./images/instagram.svg" alt="instagram">
+                    <div class="contacts-social__mail"><a class="contacts-social__mail_link" href="https://mail.ru/"></a></div>
+                    <div class="contacts-social__instagram"><a class="contacts-social__instagram_link" href="https://www.instagram.com/"></a></div>
                 </div>
                 <div class="contacts-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231845!2d39.72099081477097!3d47.244847220892034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1636791952123!5m2!1sen!2sru" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="contacts-map--link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231845!2d39.72099081477097!3d47.244847220892034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1636791952123!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="contacts-overlay"></div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer-wrapper wrapper">
             <span class="footer-logo">IC "Repair Design Project"</span>
@@ -391,8 +387,7 @@
             <a class="footer-phone" href="tel:+7 (928) 768-32-39">+7 (928) 768-32-39</a>
             <button class="footer-button button">Request a call</button>
         </div>
-    </footer>
-    
+    </footer>    
 </body>
 </html>
 
