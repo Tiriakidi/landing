@@ -162,6 +162,15 @@ body {
     display: none;
 }
   
+.form-checkbox__fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
 .form-checkbox__fake::before{
     content:"\2713";
     opacity: 0;
@@ -170,15 +179,6 @@ body {
   
 .form-checkbox__input:checked + .form-checkbox__fake::before{
     opacity: 1;
-}
-  
-.form-checkbox__fake {
-    display: inline-flex;
-    width: 18px;
-    height: 18px;
-    background: #E3B873;
-    color: #fff;
-    justify-content: center;
 }
   
 .form-checkbox__label {
