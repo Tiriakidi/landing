@@ -169,6 +169,7 @@ body {
     background: #E3B873;
     color: #fff;
     justify-content: center;
+    align-items: center;
 }
 
 .form-checkbox__fake::before{
