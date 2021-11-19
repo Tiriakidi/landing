@@ -155,6 +155,10 @@
     .pr-more-box::after {
         display: none;
     }
+
+    .pr-more-box {
+        width: 340px;
+    }
 }
 
 /* #endregion */
@@ -215,6 +219,14 @@
     .control-form-submit {
         display: flex;
         flex-direction: column;
+    }
+
+    .control-form-submit__list {
+        width: 340px;
+    }
+
+    .control-form-submit__item--Name {
+        padding-right: 0;
     }
 
     .control-form-submit__list li:first-child {
