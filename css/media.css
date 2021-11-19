@@ -271,7 +271,11 @@
 
     .control-form__button {
         width: 340px;
-        margin-top: 80px;
+        margin-top: 90px;
+    }
+
+    .control-form__button:hover {
+        background-color: #FFFFFF;
     }
 
     .control-form-checkbox-container {
