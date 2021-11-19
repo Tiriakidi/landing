@@ -5,7 +5,6 @@
     }
 }
     
-
 /* #region Header */
 
 @media screen and (max-width: 1300px) {
@@ -252,12 +251,22 @@
         width : 340px;
         font-size: 14px;
         line-height: 20px;
+        color: #FFFFFF;
         background-color: #131313;
         border: 1px solid #FFFFFF;
         border-top: transparent;
         border-left: transparent;
         border-right: transparent;  
         padding-bottom: 2px;
+    }
+
+    .control-form__input:focus {
+        caret-color: #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .control-form__input::placeholder {
+        color: #FFFFFF;  
     }
 
     .control-form__button {
@@ -271,8 +280,6 @@
     }
 
     .control-form-checkbox__label {
-        font-size: 14px;
-        line-height: 23px;
         color: #FFFFFF;
     }  
 }
@@ -282,11 +289,6 @@
 /* #region TYPES OF REPAIR */
 
 @media screen and (max-width: 1300px) {
-    /* .types-container {
-        max-width: 340px;
-        margin: 0 auto;
-    } */
-
     .types-save-money-container {
         display: none;
     }
@@ -304,7 +306,7 @@
     }
 
     .types-box {
-        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 59px;
     }
 
@@ -497,9 +499,7 @@
         height: 39px;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-   
+    }  
 }
 
 /* #endregion */

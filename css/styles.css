@@ -24,6 +24,7 @@ body {
     color: #FFFFFF;
     background-color: #FFFFFF;
 }
+
 /* #endregion */
 
 /* #region Common */
@@ -31,7 +32,6 @@ body {
 .button {
     outline: 0;
     border: 0;
-
     font-family: "Nunito Sans Regular", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -40,10 +40,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-
     background-color: #E3B873;
     border-radius: 2px;
-
     width: 200px;
     height: 51px;
     cursor: pointer;
@@ -112,7 +110,7 @@ body {
 
 /* #endregion */
 
-/* #region CSS for FORMS and INPUTS */
+/* #region CSS for FORMS and CHECKBOX */
 
 .form-container {   
     display: flex;
@@ -124,7 +122,6 @@ body {
 }
 
 .form__input {
-    font-family: "Nunito Sans Regular", Arial, Helvetica, sans-serif;   
     font-size: 14px;
     line-height: 23px;
     border: 1px solid #363636;
@@ -136,7 +133,6 @@ body {
 .form__input:focus {
     outline: none;
 }
-
 
 .form__input::placeholder {
     font-family: "Nunito Sans Regular", Arial, Helvetica, sans-serif;
@@ -174,7 +170,7 @@ body {
   
 .form-checkbox__input:checked + .form-checkbox__fake::before{
     opacity: 1;
-  }
+}
   
 .form-checkbox__fake {
     display: inline-flex;
@@ -193,8 +189,6 @@ body {
     cursor: pointer;
 }
 
-
-
 /* #endregion */
 
 /* #region Header */
@@ -206,10 +200,8 @@ body {
 
 .header-wrapper {
     height: 37px;
-
     display: flex;
     align-items: center;
-
     padding-top: 24px;
     padding-bottom: 22px;  
 }
@@ -221,7 +213,6 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #E3B873;
-
     min-width: 180px;
     margin-right: 95px;
 }
@@ -257,7 +248,6 @@ body {
     text-align: right;
     text-decoration-line: underline;
     color: #E3B873;
-
     min-width: 126px;
     margin-left: 67px;
     margin-right: 45px;
@@ -308,8 +298,6 @@ body {
     line-height: 53px;
     letter-spacing: 0;
     color: #FFFFFF;
-
-    /* width: 676px; */
     height: 105px;
 }
 
@@ -325,7 +313,6 @@ body {
     margin-top: 19px;
     margin-bottom: 41px;
 }
-
 
 .hero-button {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -529,7 +516,7 @@ body {
     margin : 0px;
 }
 
-.control-form-submit__item--Name {
+.control-form-submit__list li:first-child {
     padding-right: 57px;
 }
 
@@ -552,8 +539,6 @@ body {
     color: #E3B873;
     background-color: transparent;
 }
-
-
 
 /* #endregion */
 
@@ -587,7 +572,7 @@ body {
 .types-box {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;   
+    margin-right: 30px;   
 }
 
 .types-box-inner {
@@ -638,13 +623,11 @@ body {
     background-image: url(../images/types_background.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
-
 }
 
 .types-specials-and-form-container {
     margin-top: 230px;
     width: 1256px;
-    /* height: 645px; */
     display: flex;
     justify-content: space-between;
     padding-bottom: 34px;
@@ -658,8 +641,7 @@ body {
 }
   
 .types-specials-content {
-    display: table;  
-    /* padding-bottom: 102px; */   
+    display: table;    
 }
   
 .types-specials-content:last-child {
@@ -676,7 +658,6 @@ body {
     font-family: "YesevaOne Regular";
     font-size: 18px;
     line-height: 25px;
-
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -702,6 +683,8 @@ body {
 
 .types-form__list {
     width: 408px;
+    margin: 0 auto;
+    padding-left: 0;
 }
 
 .types-form__input {
@@ -714,9 +697,7 @@ body {
     color: #FFFFFF;
 }
 
-
 .types-form__subtitle {
-    /* width: 297px; */
     font-size: 18px;
     line-height: 26px;
     text-align: center;
@@ -724,18 +705,11 @@ body {
     margin-bottom: 33px;
 }
 
-.types-form__list {
-    margin: 0 auto;
-    padding-left: 0;
-}
-
 .types-form__item {
     padding-bottom: 48px;
 }
 
 .types-form__label {
-    font-size: 13px;
-    line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -744,9 +718,6 @@ body {
 }
 
 .types-form__input {
-    width : 408px;
-    font-size: 14px;
-    line-height: 23px;
     background-color: #131313;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-top: transparent;
@@ -754,7 +725,6 @@ body {
     border-right: transparent;  
     padding-bottom: 2px;
 }
-
 
 .types-form-checkbox-container {
     margin-top: 0;
@@ -907,7 +877,6 @@ body {
 
 /* #region CLIENTS */
 
-
 .clients-wrapper {
     display: flex;
     flex-direction: column;
@@ -1048,7 +1017,6 @@ body {
 .contacts-wrapper {
     position: relative;
     z-index: 1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1085,8 +1053,6 @@ body {
 .contacts-form__input {
     width: 231px;
     color: #FFFFFF;
-    font-size: 14px;
-    line-height: 23px;
     background-color: #181818;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-top: transparent;
@@ -1098,21 +1064,18 @@ body {
 .contacts-form__input--last {
     width: 516px;
     color: #FFFFFF;
-
 }
 
 .contacts-form__item--last {
     padding-top: 40px;
 }
 
-.types-form__input:focus {
+.contacts-form__input:focus {
     caret-color: #FFFFFF;
     color: #FFFFFF;
 }
 
 .contacts-form__label {
-    font-size: 13px;
-    line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1120,12 +1083,13 @@ body {
     color: #FFFFFF;  
 }
 
-.contacts-form__input--first_line, .contacts-form__label--first_line {
+.contacts-form__input--first_line, 
+.contacts-form__label--first_line {
     display: block;
 }
 
-
-.contacts-form__list, .contacts-form__item--first_line {
+.contacts-form__list, 
+.contacts-form__item--first_line {
     float : left;   
 }
 
@@ -1158,41 +1122,26 @@ body {
     background: url(../images/instagram.svg);
 }
 
-.contacts-social__mail, .contacts-social__instagram {
+.contacts-social__mail, 
+.contacts-social__instagram {
     display: inline-block;
     margin-right: 7px;
     width: 28px;
     height: 28px;
 }
 
-.contacts-social__mail {
-    position: relative;
-}
-
-.contacts-social__mail:hover {
-    cursor: pointer;
-    opacity: .9;
-}
-
-.contacts-social__mail_link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    z-index: 10;    
-}
-
+.contacts-social__mail, 
 .contacts-social__instagram {
     position: relative;
 }
 
+.contacts-social__mail, 
 .contacts-social__instagram:hover {
     cursor: pointer;
     opacity: .9;
 }
 
+.contacts-social__mail_link, 
 .contacts-social__instagram_link {
     position: absolute;
     width: 100%;
