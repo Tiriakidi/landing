@@ -18,6 +18,7 @@ let projectsInfo = [{
         time: '3 months'
 }];
 
+
 //IMAGE
 let sliderImage = document.querySelector('.pr-image');
 

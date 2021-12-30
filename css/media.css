@@ -109,34 +109,38 @@
         text-align: center;
     }
 
-    .pr-image__Rostov {
-        display: block;
+    .pr-image {
+        /* display: block;
         position: relative;
         box-sizing: border-box;
-        background: url(../images/completed_rostov_mobile.jpg);
+        background: url(../images/completed_rostov_mobile.jpg); */
         width: 340px;
         height: 242px;
         padding-left: 340px;
         margin-top: 0;
     }
 
-    .pr-image__Rostov_wrapper {
+    .pr-image_wrapper {
         position: relative;
     }
 
-    .pr-image__Rostov_wrapper::before {
+    .slider-dots {
+        display: none;
+    }
+
+    .slider-arrow-left {
         position: absolute;
         content: url(../images/round_arrow_left.svg);
-        margin-top: 103px;
+        margin-top: -340px;
         margin-left: 13px;
         cursor: pointer;
         z-index: 1;
     }
 
-    .pr-image__Rostov_wrapper::after {
+    .slider-arrow-right {
         position: absolute;
         content: url(../images/round_arrow_right.svg);
-        margin-top: 103px;
+        margin-top: -340px;
         margin-left: 291px;
         cursor: pointer;
     }
