@@ -47,35 +47,42 @@
         <!-- SECTION COMPLETED PROJECTS -->
         <section id="projects" class="pr">
             <ul class="pr-cities__list wrapper">
-                <li class="pr-cities__item"><a class="pr-cities__link" href="#">Rostov-on-Don, Admiral</a></li>
-                <li class="pr-cities__item"><a class="pr-cities__link" href="#">Sochi Thieves</a></li>
-                <li class="pr-cities__item"><a class="pr-cities__link" href="#">Rostov-on-Don Patriotic</a></li>
+                <li class="pr-cities__item"><a class="pr-cities__link slider_options active" href="#" data-index='0'>Rostov-on-Don, Admiral</a></li>
+                <li class="pr-cities__item"><a class="pr-cities__link slider_options" href="#" data-index='1'>Sochi Thieves</a></li>
+                <li class="pr-cities__item"><a class="pr-cities__link slider_options" href="#" data-index='2'>Rostov-on-Don Patriotic</a></li>
             </ul>
             <div class="pr-info-wrapper wrapper">                               
                 <div class="pr-info">
                     <h2 class="pr-info__title title">Completed<br>projects</h2>
                     <p class="pr-info__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families</p>                    
-                    <div class="pr-image__Rostov_wrapper">
-                        <img class="pr-image__Rostov" src="./images/completed_rostov.jpg" alt="rostov appartmets" width="679" height="482">  
+                    <div class="pr-image_wrapper">
+                        <img class="pr-image" src="./images/completed_rostov.jpg" alt="rostov appartmets" data-index='0' width="679" height="482">  
                     </div>             
                     <div class="pr-more-box">
-                        <div class="pr-more__block">
-                            <h3 class="pr-more__subtitle subtitle">city:</h3>
-                            <span class="pr-more__desc">Rostov-on-Don <br>LCD admiral</span>
+                        <div class="pr-more__block pr-block-city">
+                            <h3 class="pr-more__subtitle subtitle pr-more__subtitle-city">city:</h3>
+                            <span class="pr-more__desc pr-more__desc-city">Rostov-on-Don <br>LCD admiral</span>
                         </div>
-                        <div class="pr-more__block">
-                            <h3 class="pr-more__subtitle subtitle">apartment area:</h3>
-                            <span class="pr-more__desc">81 m2</span>
+                        <div class="pr-more__block pr-block-area">
+                            <h3 class="pr-more__subtitle subtitle pr-more__subtitle-area">apartment area:</h3>
+                            <span class="pr-more__desc pr-more__desc-area">81 m2</span>
                         </div>
-                        <div class="pr-more__block">
-                            <h3 class="pr-more__subtitle subtitle">Repair time</h3>
-                            <span class="pr-more__desc">3.5 months</span>
+                        <div class="pr-more__block pr-block-time">
+                            <h3 class="pr-more__subtitle subtitle pr-more__subtitle-time">Repair time</h3>
+                            <span class="pr-more__desc pr-more__desc-time">3.5 months</span>
                         </div>
                         <div class="pr-more__block">
                             <h3 class="pr-more__subtitle subtitle">Repair Cost:</h3>
                             <span class="pr-more__desc">Upon request</span>
                         </div>                        
-                    </div>                    
+                    </div>   
+                    <div class="pr-slider-btns">
+                        <div class="slider-arrow-left slider-arrow left"></div>
+                        <div class="slider-dots slider_options active" data-index='0'></div>
+                        <div class="slider-dots slider_options" data-index='1'></div>
+                        <div class="slider-dots slider_options" data-index='2'></div>
+                        <div class="slider-arrow-right slider-arrow right"></div>
+                    </div>                 
                 </div>
             </div>
         </section>
@@ -389,7 +396,11 @@
             <a class="footer-phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
             <button class="footer-button button">Request a call</button>
         </div>
-    </footer>    
+    </footer>   
+    <script src="script.js"></script> 
 </body>
 </html>
+
+
+
 
